@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regjistrohu</title>
+
+    <style>
+
+        body{
+            background-color: lightgrey;
+        }
+        
+        
+        .Regjistrimi {
+         
+           
+          
+            display:grid;
+            width: 300px;
+            height: 600px;
+        
+          
+
+        @media screen and (max-width: 500px) {
+            header {
+                flex-direction: column;
+            }
+        }
+
+        @media screen and(max-width: 501px) {
+            header {
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (min-width: 950px) {
+            header {
+                flex-direction: column;
+            }
+        }
+
+        
+        }
+
+        .btn {
+        margin: 15px;
+        font-family: "Circular Std";
+        font-weight: bold;
+        font-size: 1em;
+        line-height: 1.5em;
+        text-decoration: none;
+        background-color:rgb(153, 173, 144);
+        padding: 12px 24px;
+        border-radius: 5px;
+        border: 1px solid #00000026;
+        transition: all .4s ease-in-out;
+        width:200px;
+        height: 25px;
+
+        &:hover {
+            color:white;
+            background-color:rgb(174, 204, 91);
+            border: 1px solid #00000026;
+        }
+       }
+
+     
+
+    
+    </style>
+</head>
+<body>
+    <form>
+        <div class="Regjistrimi">
+            <input type="text" placeholder="Sheno emrin" required pattern="[Aldin]+" />
+            <br></br>
+            <input type="tel" placeholder="Sheno nr. tel." />
+            <br></br>
+            <input type="email" placeholder="Sheno email adrese" required/>
+            <br></br>
+            <input type="password" placeholder="Sheno fjalekalimin" />
+            <br></br>
+            <input type="date" />
+            <br></br>
+            <a href="http://127.0.0.1:5500/index.html?" class="btn">Regjistrohu</a>
+        </div>
+    </form>
+</body>
+</html>
